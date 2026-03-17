@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Protocolo Detox 21 Dias — Perca 3-8kg + Energia em 21 Dias (Garantido)</title>
-<meta name="description" content="Método científico que destranca o metabolismo travado. Perca 3-8kg em 21 dias, recupere energia, durma melhor. 12k+ pessoas transformadas. Garantia 7 dias."/>
+<meta name="description" content="Método científico que destranca o metabolismo. Perca 3-8kg em 21 dias, recupere energia, durma melhor. 12k+ pessoas transformadas. Garantia 7 dias."/>
 
 <!-- Meta Pixel -->
 <script>
@@ -41,36 +41,30 @@ fbq('track', 'PageView');
 html{scroll-behavior:smooth;}
 body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overflow-x:hidden;}
 
-/* ── NOTIFICAÇÃO TOPO — SUPER AGRESSIVA ── */
+/* ── NOTIFICAÇÃO TOPO ── */
 .top-alert{
   background:linear-gradient(90deg,#c0392b,#e07030);color:white;text-align:center;
-  padding:14px 16px;font-size:13px;font-weight:700;
-  letter-spacing:.5px;position:relative;animation:pulse 1.2s infinite;
+  padding:12px 16px;font-size:13px;font-weight:700;
+  letter-spacing:.5px;position:relative;animation:pulse 2s infinite;
 }
-.top-alert strong{font-size:16px;display:block;text-transform:uppercase;letter-spacing:1px;}
-.top-alert span{display:block;font-size:12px;opacity:.95;margin-top:3px;font-weight:800;}
-.top-alert .blink{animation:blink 1s infinite;}
+.top-alert strong{font-size:15px;display:block;}
+.top-alert span{display:block;font-size:11px;opacity:.9;margin-top:2px;}
 
-@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.75;}}
-@keyframes blink{0%,50%,100%{opacity:1;}25%,75%{opacity:.4;}}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.85;}}
 
-/* ── URGENCY BAR — SUPER URGENTE ── */
+/* ── URGENCY BAR ── */
 .urgency{
-  background:linear-gradient(90deg,#1a4a2e,#0f2d1a);color:white;
+  background:var(--gm);color:white;
   display:flex;align-items:center;justify-content:center;
-  gap:12px;padding:14px 20px;flex-wrap:wrap;
-  font-size:14px;font-weight:900;text-align:center;
-  border-bottom:3px solid #e07030;
-  box-shadow:0 4px 12px rgba(0,0,0,.2);
+  gap:12px;padding:13px 20px;flex-wrap:wrap;
+  font-size:14px;font-weight:700;text-align:center;
 }
-.urgency strong{color:#ff6b35;font-size:15px;text-transform:uppercase;letter-spacing:1px;}
 .timer-wrap{display:inline-flex;gap:6px;align-items:center;}
-.t-block{background:linear-gradient(135deg,#e07030,#ff6b35);border-radius:6px;
-         padding:6px 12px;font-size:22px;font-weight:900;min-width:48px;text-align:center;
-         color:white;box-shadow:0 4px 12px rgba(224,112,48,.4);}
-.t-sep{font-size:22px;font-weight:900;opacity:.8;color:#ff6b35;}
+.t-block{background:rgba(255,255,255,0.15);border-radius:6px;
+         padding:4px 10px;font-size:20px;font-weight:900;min-width:42px;text-align:center;}
+.t-sep{font-size:20px;font-weight:900;opacity:.6;}
 
-/* ── HERO — MÁXIMA AGRESSIVIDADE ── */
+/* ── HERO ── */
 .hero{
   background:linear-gradient(155deg,#071810 0%,#0f2d1a 45%,#1a4a2e 100%);
   min-height:100vh;display:flex;flex-direction:column;
@@ -82,44 +76,37 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
   content:'';position:absolute;inset:0;
   background:
     radial-gradient(ellipse at 15% 60%,rgba(76,175,125,.14) 0%,transparent 55%),
-    radial-gradient(ellipse at 85% 15%,rgba(224,112,48,.15) 0%,transparent 50%);
+    radial-gradient(ellipse at 85% 15%,rgba(224,112,48,.1) 0%,transparent 50%);
 }
 .hero-eyebrow{
-  background:linear-gradient(135deg,#e07030,#ff6b35);color:white;
-  font-size:12px;font-weight:900;letter-spacing:2.5px;
-  text-transform:uppercase;padding:8px 24px;
+  background:var(--or);color:white;
+  font-size:11px;font-weight:900;letter-spacing:2px;
+  text-transform:uppercase;padding:7px 22px;
   border-radius:40px;display:inline-block;
   margin-bottom:28px;
   animation:fadeUp .5s ease both;
-  box-shadow:0 6px 20px rgba(224,112,48,.35);
 }
 .hero h1{
   font-family:'Playfair Display',serif;
-  font-size:clamp(40px,7vw,78px);
+  font-size:clamp(36px,6.5vw,74px);
   font-weight:900;color:var(--wh);
-  line-height:1.05;margin-bottom:10px;
+  line-height:1.08;margin-bottom:10px;
   animation:fadeUp .6s .1s ease both;
-  text-shadow:0 4px 12px rgba(0,0,0,.3);
 }
-.hero h1 em{color:#ff6b35;font-style:normal;font-weight:900;}
+.hero h1 em{color:var(--or);font-style:normal;font-weight:900;}
 .hero h1 u{
   text-decoration:none;
-  background:linear-gradient(90deg,#ff6b35,#ffa500);
+  background:linear-gradient(90deg,var(--or),#f4a040);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  font-size:1.1em;
 }
 .hero-lead{
-  font-size:clamp(16px,2.3vw,22px);color:#b8dfc8;
-  line-height:1.65;max-width:680px;margin:0 auto 16px;
+  font-size:clamp(16px,2.2vw,21px);color:#b8dfc8;
+  line-height:1.65;max-width:620px;margin:0 auto 16px;
   animation:fadeUp .6s .2s ease both;
-  font-weight:600;
 }
 .hero-sub-note{
-  font-size:14px;color:#ff6b35;margin-bottom:36px;
+  font-size:13px;color:#6a9a7a;margin-bottom:36px;
   animation:fadeUp .6s .25s ease both;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:1px;
 }
 
 /* proof strip */
@@ -135,64 +122,48 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
 .proof-item:last-child{border-right:none;}
 .proof-num{
   font-family:'Playfair Display',serif;
-  font-size:38px;font-weight:900;color:#ff6b35;line-height:1;
+  font-size:34px;font-weight:900;color:var(--gv);line-height:1;
 }
-.proof-lbl{font-size:11px;color:#88b89a;text-transform:uppercase;letter-spacing:1px;margin-top:4px;font-weight:700;}
+.proof-lbl{font-size:11px;color:#88b89a;text-transform:uppercase;letter-spacing:1px;margin-top:4px;}
 
 /* hero box */
 .hero-box{
-  background:rgba(255,107,53,.08);
-  border:3px solid #ff6b35;
-  border-radius:24px;padding:40px 40px;
-  max-width:520px;width:100%;
+  background:rgba(255,255,255,.055);
+  border:2px solid rgba(224,112,48,.4);
+  border-radius:22px;padding:34px 36px;
+  max-width:500px;width:100%;
   animation:fadeUp .7s .4s ease both;
   backdrop-filter:blur(4px);
-  box-shadow:0 30px 80px rgba(224,112,48,.35);
-  position:relative;
+  box-shadow:0 20px 60px rgba(224,112,48,.25);
 }
-.hero-box::before{
-  content:'⚡ OFERTA LIMITADA ⚡';
-  position:absolute;top:-16px;left:50%;transform:translateX(-50%);
-  background:linear-gradient(135deg,#e07030,#ff6b35);
-  color:white;padding:6px 20px;border-radius:20px;
-  font-size:11px;font-weight:900;letter-spacing:1px;
-  text-transform:uppercase;
-}
-.old-price{font-size:15px;color:#6a9a7a;text-decoration:line-through;margin-bottom:4px;font-weight:700;}
+.old-price{font-size:14px;color:#6a9a7a;text-decoration:line-through;margin-bottom:2px;}
 .new-price{
   font-family:'Playfair Display',serif;
-  font-size:64px;font-weight:900;color:#ff6b35;line-height:1;
+  font-size:58px;font-weight:900;color:var(--wh);line-height:1;
 }
-.new-price sup{font-size:28px;vertical-align:top;margin-top:12px;}
-.price-note{font-size:13px;color:var(--wh);font-weight:800;margin:8px 0 24px;
-  background:rgba(255,107,53,.2);padding:8px 12px;border-radius:8px;}
-.discount-badge{
-  display:inline-block;background:#c0392b;color:white;
-  padding:6px 14px;border-radius:20px;font-size:12px;
-  font-weight:900;margin-bottom:14px;text-transform:uppercase;
-  letter-spacing:1px;
-}
+.new-price sup{font-size:26px;vertical-align:top;margin-top:12px;}
+.price-note{font-size:13px;color:var(--or);font-weight:800;margin:6px 0 22px;}
 .btn-main{
   display:block;width:100%;
-  background:linear-gradient(135deg,#ff6b35 0%,#e07030 100%);
-  color:white;font-size:20px;font-weight:900;
-  text-decoration:none;padding:22px 28px;
-  border-radius:16px;border:none;cursor:pointer;
-  text-transform:uppercase;letter-spacing:1px;
-  box-shadow:0 14px 48px rgba(224,112,48,.55);
+  background:linear-gradient(135deg,var(--or) 0%,var(--ord) 100%);
+  color:white;font-size:19px;font-weight:900;
+  text-decoration:none;padding:20px 28px;
+  border-radius:14px;border:none;cursor:pointer;
+  text-transform:uppercase;letter-spacing:.8px;
+  box-shadow:0 10px 36px rgba(224,112,48,.45);
   transition:transform .18s,box-shadow .18s;
   position:relative;overflow:hidden;
 }
 .btn-main::after{
   content:'';position:absolute;inset:0;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);
   transform:translateX(-100%);
   animation:shimmer 2.4s 1.5s ease infinite;
 }
-.btn-main:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(224,112,48,.7);}
-.btn-main:active{transform:translateY(-2px);}
-.btn-main small{display:block;font-size:11px;font-weight:600;opacity:.85;margin-top:6px;text-transform:none;letter-spacing:0;}
-.hero-guarantee{font-size:13px;color:#ff6b35;margin-top:16px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.btn-main:hover{transform:translateY(-3px);box-shadow:0 16px 44px rgba(224,112,48,.6);}
+.btn-main:active{transform:translateY(-1px);}
+.btn-main small{display:block;font-size:11px;font-weight:600;opacity:.82;margin-top:5px;text-transform:none;letter-spacing:0;}
+.hero-guarantee{font-size:12px;color:#77aa88;margin-top:14px;font-weight:600;}
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes shimmer{0%{transform:translateX(-100%);}100%{transform:translateX(100%);}}
@@ -200,43 +171,42 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
 /* ── SEÇÃO: VOCÊ JÁ SE SENTIU ASSIM? ── */
 .pain-section{background:var(--wh);padding:90px 20px;}
 .container{max-width:920px;margin:0 auto;}
-.sec-tag{font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:#ff6b35;margin-bottom:12px;}
-.sec-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:900;line-height:1.15;margin-bottom:14px;}
-.sec-title span{color:#ff6b35;}
-.sec-title em{font-style:normal;color:#e07030;}
-.sec-lead{font-size:17px;color:var(--gy);line-height:1.72;max-width:680px;font-weight:600;}
+.sec-tag{font-size:11px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:var(--gl);margin-bottom:12px;}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);font-weight:900;line-height:1.18;margin-bottom:14px;}
+.sec-title span{color:var(--gl);}
+.sec-title em{font-style:normal;color:var(--or);}
+.sec-lead{font-size:17px;color:var(--gy);line-height:1.72;max-width:680px;}
 
 .pain-intro{
-  background:linear-gradient(135deg,#0f2d1a,#1a3a24);border-radius:18px;
-  padding:36px 40px;margin:36px 0;
-  border-left:6px solid #ff6b35;
-  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  background:var(--gd);border-radius:18px;
+  padding:32px 36px;margin:36px 0;
+  border-left:5px solid var(--or);
 }
 .pain-intro p{font-size:18px;line-height:1.8;color:#c8e8d0;}
-.pain-intro p strong{color:var(--wh);font-weight:900;}
-.pain-intro p em{color:#ff6b35;font-style:normal;font-weight:800;}
+.pain-intro p strong{color:var(--wh);}
+.pain-intro p em{color:var(--or);font-style:normal;font-weight:800;}
 
 .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:28px;}
 .pain-card{
-  background:var(--wh);border:2px solid #f0e8e0;
-  border-radius:14px;padding:24px 22px;
-  box-shadow:0 4px 16px rgba(0,0,0,.07);
-  border-left:5px solid #ff6b35;
+  background:var(--wh);border:1px solid #f0e8e0;
+  border-radius:14px;padding:22px 20px;
+  box-shadow:0 2px 14px rgba(0,0,0,.05);
+  border-left:4px solid var(--red);
   transition:transform .2s,box-shadow .2s;
 }
-.pain-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,.12);}
-.pain-card .ico{font-size:32px;margin-bottom:12px;}
-.pain-card h3{font-size:17px;font-weight:900;margin-bottom:8px;color:var(--dk);}
-.pain-card p{font-size:13px;color:var(--gy);line-height:1.6;}
+.pain-card:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.09);}
+.pain-card .ico{font-size:28px;margin-bottom:10px;}
+.pain-card h3{font-size:16px;font-weight:800;margin-bottom:6px;color:var(--dk);}
+.pain-card p{font-size:13px;color:var(--gy);line-height:1.55;}
 
 .reveal-block{
-  background:linear-gradient(135deg,#0f2d1a,#1a3a24);
-  border-radius:18px;padding:40px;margin-top:36px;
-  text-align:center;border:2px solid rgba(255,107,53,.2);
+  background:linear-gradient(135deg,var(--gd),#1a3a24);
+  border-radius:18px;padding:36px;margin-top:36px;
+  text-align:center;
 }
-.reveal-block h3{font-family:'Playfair Display',serif;font-size:32px;color:var(--wh);margin-bottom:16px;}
-.reveal-block p{font-size:17px;color:#a8d4b8;line-height:1.75;max-width:680px;margin:0 auto 20px;}
-.reveal-block strong{color:#ff6b35;font-weight:900;}
+.reveal-block h3{font-family:'Playfair Display',serif;font-size:28px;color:var(--wh);margin-bottom:14px;}
+.reveal-block p{font-size:16px;color:#a8d4b8;line-height:1.75;max-width:620px;margin:0 auto 20px;}
+.reveal-block strong{color:var(--wh);}
 
 /* ── SEÇÃO: A VIRADA ── */
 .turn-section{background:var(--gd);padding:90px 20px;}
@@ -245,21 +215,19 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
 
 .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:40px;}
 .pillar{
-  background:rgba(255,107,53,.08);
-  border:2px solid rgba(255,107,53,.3);
-  border-radius:18px;padding:32px 28px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(76,175,125,.22);
+  border-radius:18px;padding:30px 26px;
   position:relative;overflow:hidden;
-  transition:all .3s;
 }
-.pillar:hover{border-color:#ff6b35;background:rgba(255,107,53,.12);}
 .pillar::before{
   content:attr(data-n);position:absolute;top:-10px;right:16px;
   font-family:'Playfair Display',serif;font-size:120px;font-weight:900;
-  color:rgba(255,107,53,.08);line-height:1;
+  color:rgba(76,175,125,.07);line-height:1;
 }
-.pillar-tag{font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase;
-            color:#ff6b35;margin-bottom:14px;display:block;}
-.pillar h3{font-size:22px;font-weight:900;color:var(--wh);margin-bottom:12px;}
+.pillar-tag{font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase;
+            color:var(--or);margin-bottom:14px;display:block;}
+.pillar h3{font-size:20px;font-weight:900;color:var(--wh);margin-bottom:10px;}
 .pillar p{font-size:14px;color:#8fbfa3;line-height:1.65;}
 
 /* ── SEÇÃO: O QUE VOCÊ RECEBE ── */
@@ -268,29 +236,27 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
 .what-card{
   background:var(--wh);border-radius:16px;padding:28px 24px;
   box-shadow:0 4px 20px rgba(0,0,0,.06);
-  border-top:4px solid #ff6b35;
+  border-top:3px solid var(--gv);
   transition:transform .2s;
 }
-.what-card:hover{transform:translateY(-4px);}
-.what-card .ico{font-size:36px;margin-bottom:14px;}
-.what-card h3{font-size:18px;font-weight:900;color:var(--gd);margin-bottom:8px;}
+.what-card:hover{transform:translateY(-3px);}
+.what-card .ico{font-size:34px;margin-bottom:14px;}
+.what-card h3{font-size:17px;font-weight:900;color:var(--gd);margin-bottom:8px;}
 .what-card p{font-size:13px;color:var(--gy);line-height:1.65;}
-.badge-new{background:#ff6b35;color:white;font-size:10px;font-weight:900;
-           padding:3px 10px;border-radius:20px;margin-left:6px;vertical-align:middle;letter-spacing:.5px;}
+.badge-new{background:var(--or);color:white;font-size:9px;font-weight:900;
+           padding:2px 8px;border-radius:20px;margin-left:6px;vertical-align:middle;letter-spacing:.5px;}
 
 /* ── NÚMEROS ── */
-.numbers-section{background:linear-gradient(135deg,#1a4a2e,#0f2d1a);padding:80px 20px;text-align:center;}
+.numbers-section{background:var(--gm);padding:80px 20px;text-align:center;}
 .numbers-section .sec-title{color:var(--wh);}
 .num-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:44px;}
 .num-card{
-  background:rgba(255,107,53,.1);border-radius:16px;padding:32px 16px;
-  border:2px solid rgba(255,107,53,.3);
-  transition:all .3s;
+  background:rgba(255,255,255,.08);border-radius:16px;padding:32px 16px;
+  border:1px solid rgba(76,175,125,.2);
 }
-.num-card:hover{border-color:#ff6b35;background:rgba(255,107,53,.15);}
-.num-val{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;color:#ff6b35;line-height:1;}
-.num-val span{font-size:26px;}
-.num-lbl{font-size:13px;color:var(--gv);margin-top:8px;font-weight:800;}
+.num-val{font-family:'Playfair Display',serif;font-size:46px;font-weight:900;color:var(--wh);line-height:1;}
+.num-val span{font-size:24px;}
+.num-lbl{font-size:13px;color:var(--gv);margin-top:8px;font-weight:700;}
 
 /* ── DEPOIMENTOS ── */
 .test-section{background:var(--bege);padding:90px 20px;}
@@ -299,41 +265,36 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
   background:var(--wh);border-radius:18px;padding:28px 24px;
   box-shadow:0 4px 24px rgba(0,0,0,.07);
   position:relative;
-  border:2px solid rgba(255,107,53,.1);
-  transition:all .3s;
 }
-.test-card:hover{border-color:#ff6b35;box-shadow:0 8px 40px rgba(224,112,48,.15);}
 .test-card::before{
   content:'"';font-family:'Playfair Display',serif;
-  font-size:80px;color:rgba(255,107,53,.15);position:absolute;top:-20px;left:8px;opacity:.5;
+  font-size:80px;color:var(--gp);position:absolute;top:-20px;left:8px;opacity:.3;
 }
-.stars{color:#ff6b35;font-size:14px;margin-bottom:12px;letter-spacing:2px;font-weight:900;}
-.test-txt{font-size:14px;color:var(--dk);line-height:1.7;margin-bottom:18px;font-weight:600;}
+.stars{color:var(--or);font-size:14px;margin-bottom:12px;letter-spacing:2px;}
+.test-txt{font-size:14px;color:var(--dk);line-height:1.7;margin-bottom:18px;}
 .test-author{display:flex;gap:12px;align-items:center;}
 .avatar{
   width:40px;height:40px;border-radius:50%;
-  background:linear-gradient(135deg,#ff6b35,#e07030);
+  background:linear-gradient(135deg,var(--gv),var(--gl));
   color:white;display:flex;align-items:center;justify-content:center;
   font-weight:900;font-size:18px;
 }
-.test-name{font-size:13px;font-weight:900;color:var(--dk);}
+.test-name{font-size:13px;font-weight:800;color:var(--dk);}
 .test-loc{font-size:12px;color:var(--gy);}
 .test-badge{
-  background:linear-gradient(135deg,rgba(255,107,53,.15),rgba(224,112,48,.1));
-  color:#ff6b35;font-size:11px;
-  font-weight:800;padding:5px 12px;border-radius:20px;
-  display:inline-block;margin-top:6px;border:1px solid rgba(255,107,53,.3);
+  background:var(--gp);color:var(--gl);font-size:11px;
+  font-weight:700;padding:4px 10px;border-radius:20px;
+  display:inline-block;margin-top:6px;
 }
 
 .test-featured{
-  background:linear-gradient(135deg,#0f2d1a,#1a3a24);
+  background:linear-gradient(135deg,var(--gd),#1a3a24);
   border-radius:20px;padding:40px 36px;
   color:white;margin-bottom:24px;
-  border:3px solid #ff6b35;
-  box-shadow:0 12px 40px rgba(224,112,48,.25);
+  border:2px solid rgba(76,175,125,.3);
 }
-.test-featured .stars{color:#ff6b35;}
-.test-featured .test-txt{color:#c8e8d0;font-size:16px;font-weight:600;}
+.test-featured .stars{color:var(--or);}
+.test-featured .test-txt{color:#c8e8d0;font-size:16px;}
 .test-featured .test-name{color:white;}
 
 /* ── COMPARATIVO ── */
@@ -345,15 +306,15 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
   font-weight:900;font-size:14px;padding:20px;border-radius:12px;
   text-align:center;text-transform:uppercase;letter-spacing:1px;
 }
-.col-before{background:rgba(192,57,43,.15);color:var(--red);}
-.col-after{background:rgba(255,107,53,.15);color:#ff6b35;}
+.col-before{background:rgba(192,57,43,.1);color:var(--red);}
+.col-after{background:rgba(76,175,125,.1);color:var(--gl);}
 .compare-row{display:contents;}
 .compare-cell{
   padding:16px 20px;border-radius:10px;font-size:14px;
-  display:flex;align-items:center;gap:10px;font-weight:600;
+  display:flex;align-items:center;gap:10px;
 }
 .cell-before{background:rgba(192,57,43,.05);color:var(--dk);}
-.cell-after{background:rgba(255,107,53,.05);color:var(--dk);}
+.cell-after{background:rgba(76,175,125,.05);color:var(--dk);}
 .compare-cell .ico{font-size:20px;}
 
 @media(max-width:640px){
@@ -368,99 +329,89 @@ body{font-family:'Nunito',sans-serif;background:var(--cr);color:var(--dk);overfl
 .faq-item{margin-bottom:12px;border-radius:12px;overflow:hidden;}
 .faq-q{
   background:var(--wh);padding:18px 24px;cursor:pointer;
-  font-weight:800;font-size:15px;color:var(--dk);
+  font-weight:700;font-size:15px;color:var(--dk);
   display:flex;justify-content:space-between;align-items:center;
-  transition:all .2s;border:2px solid #f0e8e0;
+  transition:all .2s;border:1px solid #f0e8e0;
 }
-.faq-q:hover{background:rgba(255,107,53,.08);color:#ff6b35;border-color:#ff6b35;}
-.faq-item.open .faq-q{background:#ff6b35;color:white;border-color:#ff6b35;}
-.faq-icon{display:inline-block;transition:transform .2s;font-weight:900;}
+.faq-q:hover{background:var(--gp);color:var(--gl);}
+.faq-item.open .faq-q{background:var(--gv);color:white;border-color:var(--gv);}
+.faq-icon{display:inline-block;transition:transform .2s;}
 .faq-item.open .faq-icon{transform:rotate(45deg);}
 .faq-a{
-  background:rgba(255,107,53,.05);padding:0 24px;max-height:0;
-  overflow:hidden;transition:all .3s;border:2px solid #f0e8e0;border-top:none;
+  background:rgba(76,175,125,.05);padding:0 24px;max-height:0;
+  overflow:hidden;transition:all .3s;border:1px solid #f0e8e0;border-top:none;
 }
 .faq-item.open .faq-a{max-height:500px;padding:18px 24px;}
-.faq-a{font-size:14px;color:var(--gy);line-height:1.7;font-weight:600;}
+.faq-a{font-size:14px;color:var(--gy);line-height:1.7;}
 
 /* ── GARANTIA ── */
-.guarantee-section{background:linear-gradient(135deg,#0f2d1a,#1a3a24);padding:80px 20px;text-align:center;}
-.guarantee-section h2{color:white;font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,48px);margin-bottom:20px;}
-.guarantee-section p{color:#a8d4b8;font-size:17px;line-height:1.7;max-width:680px;margin:0 auto 28px;font-weight:600;}
+.guarantee-section{background:linear-gradient(135deg,var(--gd),#1a3a24);padding:80px 20px;text-align:center;}
+.guarantee-section h2{color:white;font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);margin-bottom:20px;}
+.guarantee-section p{color:#a8d4b8;font-size:16px;line-height:1.7;max-width:620px;margin:0 auto 28px;}
 .guarantee-ring{
-  width:140px;height:140px;border-radius:50%;
-  background:linear-gradient(135deg,#ff6b35,#ffa500);
+  width:120px;height:120px;border-radius:50%;
+  background:linear-gradient(135deg,var(--or),#f4a040);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
-  margin:0 auto 24px;box-shadow:0 16px 50px rgba(224,112,48,.4);
-  border:3px solid rgba(255,255,255,.2);
+  margin:0 auto 24px;box-shadow:0 10px 40px rgba(224,112,48,.3);
 }
-.guarantee-ring .big{font-size:52px;font-weight:900;color:white;}
-.guarantee-ring .small{font-size:13px;font-weight:800;color:rgba(255,255,255,.95);}
+.guarantee-ring .big{font-size:48px;font-weight:900;color:white;}
+.guarantee-ring .small{font-size:12px;font-weight:700;color:rgba(255,255,255,.9);}
 .guarantee-points{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;
-  margin-top:32px;max-width:800px;margin-left:auto;margin-right:auto;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;
+  margin-top:32px;max-width:700px;margin-left:auto;margin-right:auto;
 }
 .gp{
-  background:rgba(255,107,53,.15);color:#ff6b35;padding:16px 18px;
-  border-radius:12px;font-weight:800;font-size:13px;
-  border:2px solid rgba(255,107,53,.3);
-  text-transform:uppercase;
-  letter-spacing:.5px;
+  background:rgba(76,175,125,.15);color:#b8dfc8;padding:14px 16px;
+  border-radius:10px;font-weight:700;font-size:13px;
 }
 
 /* ── CTA FINAL ── */
 .cta-section{background:var(--wh);padding:90px 20px;}
 .cta-section h2{
-  font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,48px);
-  color:var(--dk);line-height:1.15;margin-bottom:20px;
+  font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);
+  color:var(--dk);line-height:1.2;margin-bottom:20px;
 }
-.cta-section h2 em{color:#ff6b35;font-style:normal;font-weight:900;}
+.cta-section h2 em{color:var(--or);font-style:normal;font-weight:900;}
 .cta-section .lead{
   font-size:17px;color:var(--gy);line-height:1.7;max-width:680px;margin:0 auto 40px;
-  font-weight:600;
 }
 .final-box{
-  background:linear-gradient(135deg,rgba(255,107,53,.12),rgba(224,112,48,.1));
-  border:3px solid #ff6b35;border-radius:20px;
-  padding:44px 40px;max-width:620px;margin:0 auto;
-  box-shadow:0 16px 48px rgba(224,112,48,.2);
+  background:linear-gradient(135deg,rgba(76,175,125,.08),rgba(224,112,48,.08));
+  border:2px solid rgba(224,112,48,.3);border-radius:20px;
+  padding:40px 36px;max-width:600px;margin:0 auto;
 }
-.checklist{list-style:none;margin-bottom:32px;}
+.checklist{list-style:none;margin-bottom:28px;}
 .checklist li{
-  padding:14px 0;font-size:15px;color:var(--dk);
+  padding:12px 0;font-size:15px;color:var(--dk);
   border-bottom:1px solid rgba(0,0,0,.05);
   display:flex;align-items:center;gap:12px;
-  font-weight:600;
 }
 .checklist li::before{
-  content:'✓';color:#ff6b35;font-weight:900;font-size:20px;
+  content:'✓';color:var(--gv);font-weight:900;font-size:18px;
 }
 .checklist li:last-child{border-bottom:none;}
-.final-price-old{font-size:15px;color:var(--gy);text-decoration:line-through;margin-bottom:6px;margin-top:24px;font-weight:700;}
+.final-price-old{font-size:14px;color:var(--gy);text-decoration:line-through;margin-bottom:4px;margin-top:20px;}
 .final-price{
-  font-family:'Playfair Display',serif;font-size:58px;font-weight:900;
-  color:#ff6b35;line-height:1;margin-bottom:10px;
+  font-family:'Playfair Display',serif;font-size:52px;font-weight:900;
+  color:var(--gd);line-height:1;margin-bottom:8px;
 }
-.final-price sup{font-size:26px;}
-.final-note{font-size:13px;color:white;font-weight:900;margin-bottom:24px;
-  background:#ff6b35;padding:10px 14px;border-radius:10px;text-transform:uppercase;
-  letter-spacing:.5px;}
-.final-sub{font-size:13px;color:#ff6b35;margin-top:16px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;}
+.final-price sup{font-size:24px;}
+.final-note{font-size:13px;color:var(--or);font-weight:800;margin-bottom:22px;}
+.final-sub{font-size:12px;color:var(--gv);margin-top:14px;font-weight:600;}
 
 /* ── FOOTER ── */
 footer{
   background:var(--gd);color:#88b89a;padding:40px 20px;text-align:center;
   font-size:12px;line-height:1.6;
 }
-footer a{color:#ff6b35;text-decoration:none;font-weight:700;}
+footer a{color:var(--gv);text-decoration:none;font-weight:600;}
 footer a:hover{text-decoration:underline;}
 
 /* ── STICKY CTA MOBILE ── */
 .sticky{
   position:fixed;bottom:0;left:0;right:0;z-index:999;
-  background:linear-gradient(135deg,#ff6b35 0%,#e07030 100%);
+  background:linear-gradient(135deg,var(--or) 0%,var(--ord) 100%);
   padding:12px 16px;display:none;
-  box-shadow:0 -4px 16px rgba(0,0,0,.2);
 }
 .sticky a{
   display:block;color:white;text-decoration:none;
@@ -476,23 +427,22 @@ footer a:hover{text-decoration:underline;}
 .social-pop{
   position:fixed;bottom:20px;right:20px;z-index:998;
   background:white;border-radius:12px;padding:14px 16px;
-  box-shadow:0 12px 40px rgba(0,0,0,.2);
+  box-shadow:0 8px 32px rgba(0,0,0,.15);
   display:flex;gap:12px;align-items:center;
   max-width:280px;opacity:0;transform:translateY(20px);
   transition:all .3s;
   pointer-events:none;
-  border:2px solid #ff6b35;
 }
 .social-pop.show{opacity:1;transform:translateY(0);pointer-events:auto;}
 .pop-avatar{
   width:36px;height:36px;border-radius:50%;
-  background:linear-gradient(135deg,#ff6b35,#e07030);
+  background:linear-gradient(135deg,var(--gv),var(--gl));
   color:white;display:flex;align-items:center;justify-content:center;
   font-weight:900;font-size:14px;flex-shrink:0;
 }
 .pop-text{font-size:12px;}
-.pop-text strong{color:var(--dk);display:block;font-weight:800;}
-.pop-text span{color:#ff6b35;font-size:11px;font-weight:700;}
+.pop-text strong{color:var(--dk);display:block;font-weight:700;}
+.pop-text span{color:var(--gy);font-size:11px;}
 .pop-time{font-size:11px;color:var(--gy);margin-top:2px;}
 
 @media(max-width:480px){
@@ -509,7 +459,6 @@ footer a:hover{text-decoration:underline;}
   .proof-strip{flex-direction:column;gap:20px;}
   .proof-item{border-right:none;padding:0;}
   .compare-table{grid-template-columns:1fr;}
-  .hero-box{padding:36px 28px;}
 }
 </style>
 </head>
@@ -519,15 +468,15 @@ footer a:hover{text-decoration:underline;}
      ALERTA TOPO — URGÊNCIA MÁXIMA
 ════════════════════════════════════════ -->
 <div class="top-alert">
-  <strong>🚨 OFERTA EXPIRANDO AGORA 🚨</strong>
-  <span>⏰ Desconto de 72% termina em <span class="blink">24 HORAS</span> · Apenas <span class="blink">27 VAGAS RESTANTES</span></span>
+  <strong>🚨 OFERTA LIMITADA — ÚLTIMAS VAGAS</strong>
+  <span>Desconto de 72% expira em 24 horas. Apenas 47 acessos restantes.</span>
 </div>
 
 <!-- ════════════════════════════════════════
-     BARRA DE URGÊNCIA — TIMER AGRESSIVO
+     BARRA DE URGÊNCIA — TIMER
 ════════════════════════════════════════ -->
 <div class="urgency">
-  ⏰ <strong>OFERTA TERMINA EM:</strong>
+  ⏰ Oferta termina em:
   <div class="timer-wrap">
     <div class="t-block" id="th">23</div>
     <div class="t-sep">:</div>
@@ -535,15 +484,14 @@ footer a:hover{text-decoration:underline;}
     <div class="t-sep">:</div>
     <div class="t-block" id="ts">47</div>
   </div>
-  <strong style="margin-left:8px;">⚡ APROVEITA AGORA!</strong>
 </div>
 
 <!-- ════════════════════════════════════════
-     HERO — MÁXIMA AGRESSIVIDADE
+     HERO — PROMESSA CLARA E ESPECÍFICA
 ════════════════════════════════════════ -->
 <section class="hero">
   <div class="container">
-    <div class="hero-eyebrow">✅ Método Comprovado · 12k+ Transformações</div>
+    <div class="hero-eyebrow">✅ Método Comprovado · 12k+ Vidas Transformadas</div>
     <h1>
       Perca <em>3 a 8kg</em> em 21 Dias<br>
       <u>Sem Fome, Sem Academia, Sem Drama</u>
@@ -552,7 +500,7 @@ footer a:hover{text-decoration:underline;}
       O protocolo que destranca o metabolismo travado. Recupere energia, durma melhor, 
       elimine o inchaço crônico — tudo em 3 semanas. Seu corpo vai finalmente funcionar.
     </p>
-    <p class="hero-sub-note">⚡ Acesso imediato · Comece HOJE MESMO · Garantia 7 dias</p>
+    <p class="hero-sub-note">⚡ Acesso imediato ao PDF · Comece hoje mesmo</p>
 
     <div class="proof-strip">
       <div class="proof-item">
@@ -570,41 +518,40 @@ footer a:hover{text-decoration:underline;}
     </div>
 
     <div class="hero-box">
-      <div class="discount-badge">72% de desconto</div>
-      <div class="old-price">Preço normal: R$ 97,00</div>
-      <div class="new-price"><sup>R$</sup>27<sup style="font-size:22px;margin-top:18px;">,00</sup></div>
-      <div class="price-note">🔥 ACESSO VITALÍCIO · ENTREGA IMEDIATA · SEM MENSALIDADE</div>
+      <div class="old-price">De R$ 97,00 — HOJE APENAS:</div>
+      <div class="new-price"><sup>R$</sup>27<sup style="font-size:20px;margin-top:18px;">,00</sup></div>
+      <div class="price-note">🔥 Acesso vitalício · Entrega imediata · Sem mensalidade</div>
       <a class="btn-main" href="https://pay.cakto.com.br/sgwynt9_807158"
          onclick="fbq&&fbq('track','InitiateCheckout')">
-        ⚡ SIM, QUERO COMEÇAR AGORA ⚡
+        ⚡ QUERO COMEÇAR AGORA
         <small>🔒 Pagamento 100% seguro · Cakto</small>
       </a>
-      <p class="hero-guarantee">✅ GARANTIA INCONDICIONAL DE 7 DIAS · NÃO FUNCIONOU? DEVOLVO TUDO.</p>
+      <p class="hero-guarantee">✅ Garantia incondicional de 7 dias. Não funcionou? Devolvo tudo.</p>
     </div>
 
   </div>
 </section>
 
 <!-- ════════════════════════════════════════
-     DOR — ESPELHO (IDENTIFICAÇÃO AGRESSIVA)
+     DOR — ESPELHO (IDENTIFICAÇÃO)
 ════════════════════════════════════════ -->
 <section class="pain-section">
   <div class="container">
-    <p class="sec-tag fi">⚠️ VOCÊ É ASSIM?</p>
-    <h2 class="sec-title fi">Se você marcou <em>3 ou mais</em> aqui,<br><span>seu corpo está PEDINDO AJUDA.</span></h2>
+    <p class="sec-tag fi">Você é assim?</p>
+    <h2 class="sec-title fi">Se você marcou <em>3 ou mais</em> aqui,<br><span>seu corpo está pedindo ajuda.</span></h2>
 
     <div class="pain-intro fi">
       <p>
         Você já acordou cansada sem fazer nada de especial? Já olhou pro espelho e pensou 
         <em>"estou fazendo tudo certo e não funciona"</em>? Já ficou com vergonha de sentar numa foto 
         porque a barriga estava inchada?<br><br>
-        <strong>Preciso te contar a verdade que NINGUÉM fala:</strong> o problema não é você. 
-        Seu metabolismo está <strong>LITERALMENTE TRAVADO por toxinas acumuladas</strong> — e nenhuma dieta comum resolve 
+        <strong>Preciso te contar a verdade que ninguém fala:</strong> o problema não é você. 
+        Seu metabolismo está <strong>literalmente travado por toxinas acumuladas</strong> — e nenhuma dieta comum resolve 
         porque elas atacam o sintoma, não a causa raiz.
       </p>
     </div>
 
-    <p class="sec-lead fi" style="margin-bottom:24px;">Você se encaixa aqui? Seja honesta:</p>
+    <p class="sec-lead fi" style="margin-bottom:24px;">Você se encaixa aqui?</p>
 
     <div class="pain-grid">
       <div class="pain-card fi">
@@ -640,14 +587,14 @@ footer a:hover{text-decoration:underline;}
     </div>
 
     <div class="reveal-block fi">
-      <h3>A raiz de tudo tem um nome: <span style="color:#ff6b35;">INTOXICAÇÃO CRÔNICA.</span></h3>
+      <h3>A raiz de tudo tem um nome: <span style="color:var(--or)">intoxicação crônica.</span></h3>
       <p>
         Agrotóxicos na comida. Metais pesados na água. Plástico nos recipientes. Químicos nos cosméticos.
-        Seu corpo absorve tudo isso <strong>TODO DIA</strong> — e quando fígado, rim e intestino ficam sobrecarregados,
-        o metabolismo <strong>SIMPLESMENTE PARA DE FUNCIONAR.</strong>
+        Seu corpo absorve tudo isso <strong>todo dia</strong> — e quando fígado, rim e intestino ficam sobrecarregados,
+        o metabolismo <strong>simplesmente para de funcionar.</strong>
       </p>
       <p>
-        A boa notícia? <strong>DÁ PRA REVERTER ISSO EM 21 DIAS</strong> com o protocolo certo.
+        A boa notícia? <strong>Dá pra reverter isso em 21 dias</strong> com o protocolo certo.
         Sem cirurgia, sem remédio, sem drama. Seu corpo sabe como se recuperar — ele só precisa das ferramentas certas.
       </p>
     </div>
@@ -659,8 +606,8 @@ footer a:hover{text-decoration:underline;}
 ════════════════════════════════════════ -->
 <section class="turn-section">
   <div class="container">
-    <p class="sec-tag fi" style="color:#ff6b35;">⚡ COMO FUNCIONA</p>
-    <h2 class="sec-title fi">O Protocolo Detox 21 Dias<br><span style="color:#ff6b35;">não é mais uma dieta.</span></h2>
+    <p class="sec-tag fi" style="color:var(--gv);">Como funciona</p>
+    <h2 class="sec-title fi">O Protocolo Detox 21 Dias<br><span style="color:var(--gv);">não é mais uma dieta.</span></h2>
     <p class="sec-lead fi">É um reset completo do seu metabolismo. Três pilares que trabalham juntos para destravar seu corpo e fazer ele funcionar do jeito que deveria funcionar desde sempre.</p>
 
     <div class="pillars">
@@ -688,8 +635,8 @@ footer a:hover{text-decoration:underline;}
 ════════════════════════════════════════ -->
 <section class="what-section">
   <div class="container">
-    <p class="sec-tag fi">📦 DENTRO DO PROTOCOLO</p>
-    <h2 class="sec-title fi">Tudo em um <span>único PDF.</span><br>Baixou, já começa HOJE.</h2>
+    <p class="sec-tag fi">Dentro do protocolo</p>
+    <h2 class="sec-title fi">Tudo em um <span>único PDF.</span><br>Baixou, já começa hoje.</h2>
     <p class="sec-lead fi">Sem login, sem app, sem plataforma que trava. É um guia prático e direto — você lê hoje e já começa amanhã de manhã.</p>
 
     <div class="what-grid">
@@ -732,7 +679,7 @@ footer a:hover{text-decoration:underline;}
 ════════════════════════════════════════ -->
 <section class="numbers-section">
   <div class="container">
-    <p class="sec-tag fi" style="color:#ff6b35;">📊 RESULTADOS REAIS DE PESSOAS REAIS</p>
+    <p class="sec-tag fi" style="color:var(--gv);">Resultados reais de pessoas reais</p>
     <h2 class="sec-title fi">Os números<br>não mentem.</h2>
     <div class="num-grid">
       <div class="num-card fi">
@@ -760,7 +707,7 @@ footer a:hover{text-decoration:underline;}
 ════════════════════════════════════════ -->
 <section class="test-section">
   <div class="container">
-    <p class="sec-tag fi" style="text-align:center;">💬 HISTÓRIAS REAIS</p>
+    <p class="sec-tag fi" style="text-align:center;">Histórias reais</p>
     <h2 class="sec-title fi" style="text-align:center;">Gente comum.<br><span>Resultados que parecem absurdos.</span></h2>
 
     <!-- Depoimento destaque -->
@@ -768,7 +715,7 @@ footer a:hover{text-decoration:underline;}
       <div class="stars">★★★★★</div>
       <p class="test-txt">
         "Eu fiz low carb durante 4 meses e perdi 2 kg. Fiz o Protocolo Detox em 21 dias e perdi 6,5 kg.
-        Mas o que me chocou não foi o peso — foi que <strong>EU ACORDEI COM ENERGIA PELA PRIMEIRA VEZ EM ANOS.</strong>
+        Mas o que me chocou não foi o peso — foi que <strong>eu acordei com energia pela primeira vez em ANOS.</strong>
         Minha pele ficou diferente, meu humor mudou. É como se meu corpo tivesse desligado e
         alguém finalmente apertou o botão de ligar de volta."
       </p>
@@ -869,7 +816,7 @@ footer a:hover{text-decoration:underline;}
 ════════════════════════════════════════ -->
 <section class="compare-section">
   <div class="container">
-    <p class="sec-tag fi">🔄 TRANSFORMAÇÃO VISÍVEL</p>
+    <p class="sec-tag fi">Transformação visível</p>
     <h2 class="sec-title fi">O que muda na <span>prática</span></h2>
     <div class="compare-table fi">
       <div class="compare-col-header col-before">❌ Antes do Protocolo</div>
@@ -913,7 +860,7 @@ footer a:hover{text-decoration:underline;}
 <section class="faq-section">
   <div class="container">
     <div class="faq-wrap">
-      <p class="sec-tag fi" style="text-align:center;">❓ SUAS DÚVIDAS RESPONDIDAS</p>
+      <p class="sec-tag fi" style="text-align:center;">Suas dúvidas respondidas</p>
       <h2 class="sec-title fi" style="text-align:center;">Respostas honestas para<br><span>perguntas reais</span></h2>
       <div style="margin-top:36px;" class="fi">
 
@@ -971,11 +918,11 @@ footer a:hover{text-decoration:underline;}
       <div class="big">7</div>
       <div class="small">dias garantia</div>
     </div>
-    <h2 class="fi">Risco ZERO. Sério mesmo.</h2>
+    <h2 class="fi">Risco zero. Sério mesmo.</h2>
     <p class="fi">
       Se você comprar, seguir o protocolo por 7 dias e não sentir nenhuma diferença —
       manda um e-mail e devolvo cada centavo. Sem formulário, sem pergunta, sem enrolação.
-      <strong>Você perde o quê? NADA. Você pode ganhar: um corpo diferente em 3 semanas.</strong>
+      <strong>Você perde o quê? Nada. Você pode ganhar: um corpo diferente em 3 semanas.</strong>
     </p>
     <div class="guarantee-points fi">
       <div class="gp">✓ 7 dias de garantia incondicional</div>
@@ -991,13 +938,13 @@ footer a:hover{text-decoration:underline;}
 ════════════════════════════════════════ -->
 <section class="cta-section">
   <div class="container">
-    <p class="sec-tag fi">🚨 ÚLTIMA CHANCE</p>
+    <p class="sec-tag fi">Sua última chance</p>
     <h2 class="fi">
       Daqui a 21 dias você pode<br>
-      estar <em>COMPLETAMENTE DIFERENTE.</em><br>
+      estar <em>completamente diferente.</em><br>
       Ou exatamente igual a hoje.
     </h2>
-    <p class="lead fi">A escolha é sua. Mas R$27 com garantia de 7 dias não é risco — é a menor barreira que existe entre você e um corpo que funciona de verdade. <strong>Não deixa essa oportunidade passar.</strong></p>
+    <p class="lead fi">A escolha é sua. Mas R$27 com garantia de 7 dias não é risco — é a menor barreira que existe entre você e um corpo que funciona de verdade.</p>
 
     <div class="final-box fi">
       <ul class="checklist">
@@ -1010,18 +957,18 @@ footer a:hover{text-decoration:underline;}
         <li>Acesso vitalício — seu para sempre</li>
       </ul>
 
-      <div class="final-price-old">Preço normal: R$ 97,00</div>
+      <div class="final-price-old">De R$ 97,00 — HOJE APENAS:</div>
       <div class="final-price"><sup>R$</sup>27<sup style="font-size:22px;margin-top:16px;">,00</sup></div>
-      <div class="final-note">🔥 ACESSO IMEDIATO · PAGAMENTO ÚNICO · SEM MENSALIDADE</div>
+      <div class="final-note">🔥 Acesso imediato no e-mail · Pagamento único · Sem mensalidade</div>
 
       <a class="btn-main" href="https://pay.cakto.com.br/sgwynt9_807158"
          onclick="fbq&&fbq('track','InitiateCheckout')"
          style="margin-bottom:14px;">
-        ⚡ SIM, QUERO TRANSFORMAR MEU CORPO AGORA ⚡
+        ⚡ QUERO TRANSFORMAR MEU CORPO AGORA
         <small>🔒 Pagamento 100% seguro via Cakto</small>
       </a>
 
-      <div class="final-sub">✅ GARANTIA 7 DIAS · SEM RISCO · ENTREGA IMEDIATA</div>
+      <div class="final-sub">✅ Garantia de 7 dias · Sem risco · Entrega imediata no e-mail</div>
     </div>
   </div>
 </section>
@@ -1033,7 +980,7 @@ footer a:hover{text-decoration:underline;}
   <p>
     © 2024 Protocolo Detox 21 Dias — Método Vida Leve. Todos os direitos reservados.<br>
     Este produto tem caráter informativo e educacional. Consulte seu médico antes de iniciar qualquer protocolo alimentar.<br>
-    <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a> · <a href="mailto:suporte@metodovidaleve.com.br">Suporte</a>
+    <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a> · <a href="/cdn-cgi/l/email-protection#cab9bfbaa5b8beaf8aa7afbea5aea5bca3aeaba6afbcafe4a9a5a7e4a8b8">Suporte</a>
   </p>
 </footer>
 
@@ -1041,7 +988,7 @@ footer a:hover{text-decoration:underline;}
 <div class="sticky">
   <a href="https://pay.cakto.com.br/sgwynt9_807158"
      onclick="fbq&&fbq('track','InitiateCheckout')">
-    🔥 GARANTIR AGORA — R$27 (72% OFF)
+    🔥 Garantir meu Protocolo — R$27
   </a>
 </div>
 
@@ -1057,7 +1004,7 @@ footer a:hover{text-decoration:underline;}
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── TIMER ────────────────────────────────────────────────
 (function(){
   const K='dvtimer2';
@@ -1113,7 +1060,8 @@ function showPop(){
   el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'),4000);
 }
-setTimeout(()=>{showPop();setInterval(showPop,12000);},5000);
+setTimeout(showPop,3000);
+setInterval(showPop,12000);
 </script>
 </body>
 </html>
