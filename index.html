@@ -574,7 +574,7 @@ footer a:hover{text-decoration:underline;}
       <div class="old-price">Preço normal: R$ 97,00</div>
       <div class="new-price"><sup>R$</sup>27<sup style="font-size:22px;margin-top:18px;">,00</sup></div>
       <div class="price-note">🔥 ACESSO VITALÍCIO · ENTREGA IMEDIATA · SEM MENSALIDADE</div>
-      <a class="btn-main" href="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8"
+      <a class="btn-main" href="https://pay.cakto.com.br/sgwynt9_807158"
          onclick="fbq&&fbq('track','InitiateCheckout')">
         ⚡ SIM, QUERO COMEÇAR AGORA ⚡
         <small>🔒 Pagamento 100% seguro · Cakto</small>
@@ -1014,7 +1014,7 @@ footer a:hover{text-decoration:underline;}
       <div class="final-price"><sup>R$</sup>27<sup style="font-size:22px;margin-top:16px;">,00</sup></div>
       <div class="final-note">🔥 ACESSO IMEDIATO · PAGAMENTO ÚNICO · SEM MENSALIDADE</div>
 
-      <a class="btn-main" href="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8"
+      <a class="btn-main" href="https://pay.cakto.com.br/sgwynt9_807158"
          onclick="fbq&&fbq('track','InitiateCheckout')"
          style="margin-bottom:14px;">
         ⚡ SIM, QUERO TRANSFORMAR MEU CORPO AGORA ⚡
@@ -1033,13 +1033,13 @@ footer a:hover{text-decoration:underline;}
   <p>
     © 2024 Protocolo Detox 21 Dias — Método Vida Leve. Todos os direitos reservados.<br>
     Este produto tem caráter informativo e educacional. Consulte seu médico antes de iniciar qualquer protocolo alimentar.<br>
-    <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a> · <a href="/cdn-cgi/l/email-protection#1764626778656372577a7263787378617e73767b7261723974787a397565">Suporte</a>
+    <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a> · <a href="mailto:suporte@protocolodetox21dias.com.br">Suporte</a>
   </p>
 </footer>
 
 <!-- STICKY CTA MOBILE -->
 <div class="sticky">
-  <a href="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8"
+  <a href="https://pay.cakto.com.br/sgwynt9_807158"
      onclick="fbq&&fbq('track','InitiateCheckout')">
     🔥 GARANTIR AGORA — R$27 (72% OFF)
   </a>
@@ -1057,7 +1057,7 @@ footer a:hover{text-decoration:underline;}
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ── TIMER ────────────────────────────────────────────────
 (function(){
   const K='dvtimer2';
@@ -1110,4 +1110,11 @@ function showPop(){
   document.getElementById('popName').textContent=p.n+' · '+p.c;
   document.getElementById('popTime').textContent=p.t;
   const el=document.getElementById('socialPop');
-  el.class
+  el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'),4000);
+}
+setTimeout(showPop,5000);
+setInterval(showPop,12000);
+</script>
+</body>
+</html>
