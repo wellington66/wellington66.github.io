@@ -574,7 +574,7 @@ footer a:hover{text-decoration:underline;}
       <div class="old-price">Preço normal: R$ 97,00</div>
       <div class="new-price"><sup>R$</sup>27<sup style="font-size:22px;margin-top:18px;">,00</sup></div>
       <div class="price-note">🔥 ACESSO VITALÍCIO · ENTREGA IMEDIATA · SEM MENSALIDADE</div>
-      <a class="btn-main" href="https://pay.cakto.com.br/sgwynt9_807158"
+      <a class="btn-main" href="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8"
          onclick="fbq&&fbq('track','InitiateCheckout')">
         ⚡ SIM, QUERO COMEÇAR AGORA ⚡
         <small>🔒 Pagamento 100% seguro · Cakto</small>
@@ -1014,7 +1014,7 @@ footer a:hover{text-decoration:underline;}
       <div class="final-price"><sup>R$</sup>27<sup style="font-size:22px;margin-top:16px;">,00</sup></div>
       <div class="final-note">🔥 ACESSO IMEDIATO · PAGAMENTO ÚNICO · SEM MENSALIDADE</div>
 
-      <a class="btn-main" href="https://pay.cakto.com.br/sgwynt9_807158"
+      <a class="btn-main" href="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8"
          onclick="fbq&&fbq('track','InitiateCheckout')"
          style="margin-bottom:14px;">
         ⚡ SIM, QUERO TRANSFORMAR MEU CORPO AGORA ⚡
@@ -1039,7 +1039,7 @@ footer a:hover{text-decoration:underline;}
 
 <!-- STICKY CTA MOBILE -->
 <div class="sticky">
-  <a href="https://pay.cakto.com.br/sgwynt9_807158"
+  <a href="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8"
      onclick="fbq&&fbq('track','InitiateCheckout')">
     🔥 GARANTIR AGORA — R$27 (72% OFF)
   </a>
@@ -1083,10 +1083,21 @@ function toggleFaq(el){
 }
 
 // ── FADE IN ──────────────────────────────────────────────
-const io=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});
-},{threshold:.08});
-document.querySelectorAll('.fi').forEach(el=>io.observe(el));
+function activateFi(el){el.classList.add('on');}
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){activateFi(e.target);io.unobserve(e.target);}
+    });
+  },{threshold:0,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fi').forEach(el=>{
+    const r=el.getBoundingClientRect();
+    if(r.top<window.innerHeight&&r.bottom>0){activateFi(el);}
+    else{io.observe(el);}
+  });
+}else{
+  document.querySelectorAll('.fi').forEach(activateFi);
+}
 
 // ── PIXEL ────────────────────────────────────────────────
 if(typeof fbq!=='undefined'){
@@ -1113,6 +1124,11 @@ function showPop(){
   el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'),4000);
 }
+// ── FALLBACK: force-show any fi still hidden after 1.5s ──
+setTimeout(function(){
+  document.querySelectorAll('.fi:not(.on)').forEach(function(el){el.classList.add('on');});
+},1500);
+
 setTimeout(showPop,5000);
 setInterval(showPop,12000);
 </script>
