@@ -719,32 +719,86 @@ footer a:hover{color:var(--vvivo)}
   .hstat{min-width:48%}
   .hstat:nth-child(2){border-right:none}
   .hstat:nth-child(3),.hstat:nth-child(4){border-top:1px solid var(--borda)}
+  /* Mecanismo */
   .delta-grid{grid-template-columns:1fr}
   .delta-item{border-right:none;border-bottom:1px solid var(--borda)}
   .delta-item:last-child{border-bottom:none}
+  /* Fases */
   .fases-strip{grid-template-columns:1fr}
   .fase-item{border-right:none;border-bottom:1px solid var(--borda)}
   .fase-item:last-child{border-bottom:none}
+  /* Antes/depois */
   .ba-wrap{grid-template-columns:1fr;gap:12px}
   .ba-seta{transform:rotate(90deg)}
+  /* Depoimentos */
   .dep-destaque{flex-direction:column;gap:8px;padding:24px 20px}
   .qdm{display:none}
-  .sec{padding:56px 16px}
-  .preco-box{margin:0 4px}
-  .preco-corpo{padding:24px 20px}
+  .deps-grid{grid-template-columns:1fr}
+  /* Seções */
+  .sec{padding:48px 16px}
+  .sec-titulo{font-size:clamp(30px,8vw,48px)}
+  /* Preço */
+  .preco-box{margin:0}
+  .preco-corpo{padding:20px 16px}
+  .preco-por{font-size:64px}
+  .preco-top{flex-direction:column;align-items:flex-start;gap:8px}
+  /* Sticky */
   .sticky-mob{display:flex}
-  .btn.lg{font-size:16px;padding:22px 36px}
+  /* Botões */
+  .btn.lg{font-size:15px;padding:20px 28px}
+  .btn.full{font-size:14px;padding:20px 20px}
+  /* Bônus */
   .bonus-val{display:none}
-  .preco-top{flex-direction:column;align-items:flex-start}
+  .bonus-row{padding:16px}
+  /* Garantia */
   .gv2-items{grid-template-columns:1fr}
-  .agit-quote{padding:24px 28px}
+  .garantia-v2{padding:20px 16px}
+  /* Quote */
+  .agit-quote{padding:20px 20px;font-size:clamp(18px,4vw,26px)}
+  /* WhatsApp */
   .wpp-grid{grid-template-columns:1fr}
-  .impacto-strip{gap:14px}
+  /* Hero */
+  .impacto-strip{gap:10px;flex-direction:column;align-items:flex-start;padding:0 4px}
+  .hero-sub{font-size:15px;margin:16px auto 28px}
+  /* Proof bar */
+  .proof-bar{gap:14px;padding:14px 16px}
+  /* Comp table */
+  .comp-c{font-size:11px;padding:10px 12px}
+  /* Order bump */
+  .ob-nome{font-size:13px}
+  .ob-por{font-size:20px}
+  /* Pressão */
+  .pressao-final{padding:20px 16px}
+  /* Custo grid */
+  .custo-grid{grid-template-columns:1fr 1fr}
+  /* Trust row */
+  .trust-row{gap:12px}
 }
 @media(max-width:480px){
   .hero-stats{flex-wrap:wrap}
   .hstat{min-width:100%;border-right:none;border-top:1px solid var(--borda)}
   .hstat:first-child{border-top:none}
+  /* Botão hero */
+  .btn.lg{width:100%;font-size:14px;padding:18px 16px;text-align:center}
+  /* Hero */
+  .hero{padding:44px 14px 36px}
+  .hero-eyebrow{font-size:9px;padding:6px 14px}
+  /* Comparativo */
+  .comp-header,.comp-row{grid-template-columns:1fr 1fr}
+  .comp-c{font-size:10px;padding:8px 10px}
+  .comp-h{font-size:9px;padding:10px}
+  /* Micro social */
+  .micro-social{flex-wrap:wrap;justify-content:center}
+  /* Benefícios */
+  .beneficios-grid{grid-template-columns:1fr}
+  /* Custo */
+  .custo-grid{grid-template-columns:1fr}
+  /* OB imagem */
+  .ob-img-wrap img{border-radius:6px}
+  /* Urgência */
+  .urgencia-real{flex-direction:column;gap:8px}
+  /* Garantia */
+  .gv2-topo{flex-direction:column;gap:12px}
 }
 
 /* ─────────────────────────────────────────
@@ -1335,6 +1389,13 @@ footer a:hover{color:var(--vvivo)}
 
           <!-- ORDER BUMP -->
           <div class="order-bump">
+            <div class="ob-img-wrap">
+              <img src="images/guia-anti-inchaco-72h.png"
+                   alt="Guia Anti-Inchaço 72h — Protocolo de Choque"
+                   width="1080" height="1080"
+                   loading="lazy"
+                   decoding="async">
+            </div>
             <div class="ob-topo">
               <div class="ob-check" id="obCheck" role="checkbox" aria-checked="false"
                    onclick="var c=this.classList.toggle('on');this.textContent=c?'✓':'☐';this.setAttribute('aria-checked',c)">☐</div>
