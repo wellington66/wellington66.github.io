@@ -16,18 +16,23 @@
 <meta property="og:image"       content="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8">
 <meta property="og:url"         content="https://pay.checkoutpixes.com/checkout/cmmwx8o0p0h261tp900fbd3vh?offer=WNEW0U8">
 
-<!-- Meta Pixel — DEVE ficar no <head>, antes de qualquer outro script -->
+<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','26073594652311587');
-fbq('track','PageView');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '831814846618857');
+fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=26073594652311587&ev=PageView&noscript=1"></noscript>
+src="https://www.facebook.com/tr?id=831814846618857&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <!-- Fontes: preconnect + display=swap evita FOIT e reduz LCP -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -719,85 +724,57 @@ footer a:hover{color:var(--vvivo)}
   .hstat{min-width:48%}
   .hstat:nth-child(2){border-right:none}
   .hstat:nth-child(3),.hstat:nth-child(4){border-top:1px solid var(--borda)}
-  /* Mecanismo */
   .delta-grid{grid-template-columns:1fr}
   .delta-item{border-right:none;border-bottom:1px solid var(--borda)}
   .delta-item:last-child{border-bottom:none}
-  /* Fases */
   .fases-strip{grid-template-columns:1fr}
   .fase-item{border-right:none;border-bottom:1px solid var(--borda)}
   .fase-item:last-child{border-bottom:none}
-  /* Antes/depois */
   .ba-wrap{grid-template-columns:1fr;gap:12px}
   .ba-seta{transform:rotate(90deg)}
-  /* Depoimentos */
   .dep-destaque{flex-direction:column;gap:8px;padding:24px 20px}
   .qdm{display:none}
   .deps-grid{grid-template-columns:1fr}
-  /* Seções */
   .sec{padding:48px 16px}
   .sec-titulo{font-size:clamp(30px,8vw,48px)}
-  /* Preço */
   .preco-box{margin:0}
   .preco-corpo{padding:20px 16px}
   .preco-por{font-size:64px}
   .preco-top{flex-direction:column;align-items:flex-start;gap:8px}
-  /* Sticky */
   .sticky-mob{display:flex}
-  /* Botões */
   .btn.lg{font-size:15px;padding:20px 28px}
   .btn.full{font-size:14px;padding:20px 20px}
-  /* Bônus */
   .bonus-val{display:none}
   .bonus-row{padding:16px}
-  /* Garantia */
   .gv2-items{grid-template-columns:1fr}
   .garantia-v2{padding:20px 16px}
-  /* Quote */
   .agit-quote{padding:20px 20px;font-size:clamp(18px,4vw,26px)}
-  /* WhatsApp */
   .wpp-grid{grid-template-columns:1fr}
-  /* Hero */
   .impacto-strip{gap:10px;flex-direction:column;align-items:flex-start;padding:0 4px}
   .hero-sub{font-size:15px;margin:16px auto 28px}
-  /* Proof bar */
   .proof-bar{gap:14px;padding:14px 16px}
-  /* Comp table */
   .comp-c{font-size:11px;padding:10px 12px}
-  /* Order bump */
   .ob-nome{font-size:13px}
   .ob-por{font-size:20px}
-  /* Pressão */
   .pressao-final{padding:20px 16px}
-  /* Custo grid */
   .custo-grid{grid-template-columns:1fr 1fr}
-  /* Trust row */
   .trust-row{gap:12px}
 }
 @media(max-width:480px){
   .hero-stats{flex-wrap:wrap}
   .hstat{min-width:100%;border-right:none;border-top:1px solid var(--borda)}
   .hstat:first-child{border-top:none}
-  /* Botão hero */
   .btn.lg{width:100%;font-size:14px;padding:18px 16px;text-align:center}
-  /* Hero */
   .hero{padding:44px 14px 36px}
   .hero-eyebrow{font-size:9px;padding:6px 14px}
-  /* Comparativo */
   .comp-header,.comp-row{grid-template-columns:1fr 1fr}
   .comp-c{font-size:10px;padding:8px 10px}
   .comp-h{font-size:9px;padding:10px}
-  /* Micro social */
   .micro-social{flex-wrap:wrap;justify-content:center}
-  /* Benefícios */
   .beneficios-grid{grid-template-columns:1fr}
-  /* Custo */
   .custo-grid{grid-template-columns:1fr}
-  /* OB imagem */
   .ob-img-wrap img{border-radius:6px}
-  /* Urgência */
   .urgencia-real{flex-direction:column;gap:8px}
-  /* Garantia */
   .gv2-topo{flex-direction:column;gap:12px}
 }
 
@@ -808,7 +785,6 @@ footer a:hover{color:var(--vvivo)}
 .fade{opacity:0}
 .fade.in{animation:entrar .55s ease forwards;will-change:opacity,transform}
 
-/* Reduz animações para quem prefere (acessibilidade) */
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
   .fade{opacity:1!important}
@@ -1314,7 +1290,6 @@ footer a:hover{color:var(--vvivo)}
     </h2>
     <div class="linha" style="margin:16px auto"></div>
 
-    <!-- PRESSÃO FINAL -->
     <div class="pressao-final fade">
       <div class="pf-titulo">SE VOCÊ SAIR AGORA...</div>
       <div class="pf-corpo">Amanhã você acorda da mesma forma. Inchada. Cansada.<br><b>Daqui a 21 dias, você vai estar exatamente onde está hoje.</b></div>
@@ -1324,7 +1299,6 @@ footer a:hover{color:var(--vvivo)}
       <div class="pf-linha"><span class="xi">✗</span> Os 3 bônus somem com as vagas</div>
     </div>
 
-    <!-- URGÊNCIA COM CONTEXTO -->
     <div class="urgencia-real fade" style="max-width:580px;margin:0 auto 28px">
       <span class="ur-ico" aria-hidden="true">⚡</span>
       <div class="ur-txt">
@@ -1357,7 +1331,6 @@ footer a:hover{color:var(--vvivo)}
             <div class="preco-eco">🎯 Você economiza R$ 301,00 hoje</div>
           </div>
 
-          <!-- GARANTIA ANTES DO BOTÃO -->
           <div class="garantia-v2">
             <div class="gv2-topo">
               <span class="gv2-ico" aria-hidden="true">🛡️</span>
@@ -1387,7 +1360,6 @@ footer a:hover{color:var(--vvivo)}
             🔒 Pix · Cartão · Boleto — Acesso em segundos após confirmação
           </p>
 
-          <!-- ORDER BUMP -->
           <div class="order-bump">
             <div class="ob-img-wrap">
               <img src="images/guia-anti-inchaco-72h.png"
@@ -1419,7 +1391,6 @@ footer a:hover{color:var(--vvivo)}
             </div>
           </div>
 
-          <!-- GARANTIA ABAIXO DO OB -->
           <div class="garantia-box">
             <span class="ga-ico" aria-hidden="true">🛡️</span>
             <div class="ga-txt">
@@ -1428,7 +1399,6 @@ footer a:hover{color:var(--vvivo)}
             </div>
           </div>
 
-          <!-- TRUST SIGNALS -->
           <div class="trust-row">
             <span class="tr-item">🔒 SSL Seguro</span>
             <span class="tr-item">💳 Pix · Cartão · Boleto</span>
@@ -1464,7 +1434,6 @@ footer a:hover{color:var(--vvivo)}
   </p>
 </footer>
 
-<!-- SCRIPTS — no final do body para não bloquear renderização -->
 <script>
 /* ── VAGAS — reduz organicamente ── */
 (function(){
@@ -1487,7 +1456,6 @@ footer a:hover{color:var(--vvivo)}
   const sticky=document.getElementById('stickymob');
   const hero=document.querySelector('.hero');
   if(!sticky||!hero)return;
-  /* padding-bottom dinâmico para não cobrir o conteúdo */
   function setBodyPad(show){
     document.body.style.paddingBottom=show?sticky.offsetHeight+'px':'0';
     sticky.setAttribute('aria-hidden',!show);
@@ -1500,7 +1468,7 @@ footer a:hover{color:var(--vvivo)}
   io.observe(hero);
 })();
 
-/* ── SCROLL REVEAL — IntersectionObserver com delay escalonado ── */
+/* ── SCROLL REVEAL ── */
 (function(){
   if(!('IntersectionObserver' in window)){
     document.querySelectorAll('.fade').forEach(el=>el.classList.add('in'));
@@ -1518,7 +1486,7 @@ footer a:hover{color:var(--vvivo)}
   document.querySelectorAll('.fade').forEach(el=>io.observe(el));
 })();
 
-/* ── HERO FADE — sem aguardar scroll ── */
+/* ── HERO FADE ── */
 document.querySelectorAll('.hero .fade').forEach((el,i)=>{
   el.style.animationDelay=(i*.13)+'s';
   el.classList.add('in');
@@ -1530,7 +1498,7 @@ document.querySelectorAll('.btn').forEach(b=>{
   b.addEventListener('mouseleave',()=>b.style.letterSpacing='');
 });
 
-/* ── PIXEL — ViewContent (após load para não bloquear FID) ── */
+/* ── PIXEL — ViewContent ── */
 window.addEventListener('load',function(){
   if(typeof fbq!=='undefined'){
     fbq('track','ViewContent',{
